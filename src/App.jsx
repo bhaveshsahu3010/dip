@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Hero from "./Components/Hero";
 // import Footer from "./Components/Footer";
 import Form from './Components/Form'
@@ -7,10 +8,18 @@ import { Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer";
 import AboutUs from "./Components/AboutUs";
 import Contact from "./Components/Contact";
+=======
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+import './App.css'
+import Register from './pages/register'
+>>>>>>> main
 
 function App() {
   return (
     <>
+<<<<<<< HEAD
       <Routes>
         <Route index element={
           <>
@@ -44,6 +53,9 @@ function App() {
        }/> 
       </Routes>
 
+=======
+      <Register/>
+>>>>>>> main
     </>
   );
 }
