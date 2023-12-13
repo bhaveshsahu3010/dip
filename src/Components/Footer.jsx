@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography, Link, styled } from "@mui/material";
+import './footer.css'
 
 const StyledFooter = styled(Box)(({ theme }) => ({
   backgroundColor: "#003f87",
@@ -14,10 +15,10 @@ const StyledFooter = styled(Box)(({ theme }) => ({
 
 const Footer = () => {
   return (
-    <StyledFooter>
+    <StyledFooter className="footer">
       <Typography variant="h6">IIT JAMMU</Typography>
       <Typography variant="body2">
-      NH-44 , PO Nagrota, Jagti, Jammu and Kashmir 181221 | Phone: 0191 257 0381 | Email: cif@iitjammu.ac.in
+        NH-44 , PO Nagrota, Jagti, Jammu and Kashmir 181221 | Phone: 0191 257 0381 | Email: cif@iitjammu.ac.in
       </Typography>
       <Box mt={2}>
         <Typography variant="body2">

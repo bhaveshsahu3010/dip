@@ -1,0 +1,9 @@
+.pref{
+    color: black
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    padding: 39px;
+}

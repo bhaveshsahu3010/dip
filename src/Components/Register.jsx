@@ -1,7 +1,9 @@
 // import React from 'react'
 import { useState } from "react"
+import {useNavigate} from 'react-router-dom'
 
 export default function Register() {
+  const navigate = useNavigate()
   const initialState = {
     email: '',
     password: '',
@@ -17,6 +19,10 @@ export default function Register() {
 
   const toggleMember=()=>{
     setValues({...values,isMember:!values.isMember})
+  }
+
+  const signIn = ()=>{
+    navigate('/dashboard')
   }
 
   return (
@@ -97,6 +103,7 @@ export default function Register() {
               <button
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              onClick={signIn}
               >
                 Sign in
               </button>
@@ -104,9 +111,9 @@ export default function Register() {
           </form>
 
           <p className="mt-10 text-center text-sm text-gray-500">
-            {values.isMember ? 'Already a member?' : 'Not a member yet? '}
+            {values.isMember ? 'Not a member yet?' : 'Already a member? '}
             <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500" onClick={toggleMember}>
-              {values.isMember ? 'Login' : 'Register'}
+              {values.isMember ? 'Register' : 'Login'}
             </a>
           </p>
         </div>
