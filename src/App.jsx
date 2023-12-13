@@ -9,6 +9,7 @@ import AboutUs from "./Components/AboutUs";
 import Contact from "./Components/Contact";
 import Navbar2 from "./Components/Navbar2";
 import PreferenceForm from "./Components/PreferenceForm";
+import Dashboard from "./Components/Dashboard";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
 
           <>
             <Navbar2/>
+            <Dashboard/>
             <Footer />
           </>
         } />

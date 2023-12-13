@@ -8,7 +8,9 @@ const options = [
     { value: 'PID3', label: 'Project3' },
 ];
 
+
 export default function App() {
+    const [preferences,setPreferences] = useState([]) 
     const [selectedOption, setSelectedOption] = useState(null);
 
     return (
